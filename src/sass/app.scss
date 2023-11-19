@@ -34,10 +34,12 @@ body {
             font-size: 25px;
             overflow: hidden;
             text-wrap: nowrap;
+            margin: 15px;
         }
         .panel__result {
             font-size: 60px;
             overflow: hidden;
+            padding-right: 15px;
         }
     }
     .dashboard {
