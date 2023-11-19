@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class calculator</title>
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;500;600;700&family=Karla:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500&family=Oswald:wght@300;400&family=Playpen+Sans:wght@100;200;300;400;600;700;800&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/e348b353f1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main class="calculator">
+      <div class="panel">
+        <div class="panel__calc">
+          <span class="panel__num--first"></span>
+          <span class="panel__sign"></span>
+          <span class="panel__num--second"></span>
+          <span class="pane__equality"></span>
+        </div>
+        <span class="panel__result">0</span>
+      </div>
+      <div class="dashboard">
+        <button data-operator="remove" class="dashboard__operator">
+          <i class="fas fa-backspace"></i>
+        </button>
+        <button data-operator="clear" class="dashboard__operator">C</button>
+        <button data-operator="operator" class="dashboard__operator">/</button>
+        <button data-operator="operator" class="dashboard__operator">X</button>
+
+        <button data-operator="number" class="dashboard__operator">9</button>
+        <button data-operator="number" class="dashboard__operator">8</button>
+        <button data-operator="number" class="dashboard__operator">7</button>
+        <button data-operator="operator" class="dashboard__operator">^</button>
+        <button data-operator="number" class="dashboard__operator">6</button>
+        <button data-operator="number" class="dashboard__operator">5</button>
+
+        <button data-operator="number" class="dashboard__operator">4</button>
+        <button data-operator="operator" class="dashboard__operator">-</button>
+        <button data-operator="number" class="dashboard__operator">1</button>
+        <button data-operator="number" class="dashboard__operator">2</button>
+        <button data-operator="number" class="dashboard__operator">3</button>
+        <button data-operator="operator" class="dashboard__operator">+</button>
+        <button data-operator="number" class="dashboard__operator">.</button>
+        <button data-operator="number" class="dashboard__operator">0</button>
+        <button
+          data-operator="equality"
+          class="dashboard__operator"
+          style="grid-column: 3 / span 2"
+        >
+          =
+        </button>
+      </div>
+    </main>
+  </body>
+</html>
