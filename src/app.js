@@ -53,19 +53,19 @@ class Calculator {
     const secondNumber = parseFloat(this.secondNumber.textContent);
     switch (this.sign.textContent) {
       case '+':
-        this.result.textContent = (firstNumber + secondNumber).toFixed(2);
+        this.result.textContent = firstNumber + secondNumber;
         break;
       case '-':
-        this.result.textContent = (firstNumber - secondNumber).toFixed(2);
+        this.result.textContent = firstNumber - secondNumber;
         break;
       case 'X':
-        this.result.textContent = (firstNumber * secondNumber).toFixed(2);
+        this.result.textContent = firstNumber * secondNumber;
         break;
       case '/':
-        this.result.textContent = (firstNumber / secondNumber).toFixed(2);
+        this.result.textContent = firstNumber / secondNumber;
         break;
       case '^':
-        this.result.textContent = (firstNumber ** secondNumber).toFixed(2);
+        this.result.textContent = firstNumber ** secondNumber;
         break;
       default:
         this.result.textContent = 'ERROR';
